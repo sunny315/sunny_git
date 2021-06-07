@@ -1,0 +1,74 @@
+STEPS FOR GIT WORKFLOW
+======================
+Initial Setup (Installing Git)
+------------------------------
+
+1. In google search, type "git scm"
+2. Click on "https://git-scm.com/"
+3. Click on Computer link for 
+   "Download 2.18.0 for Windows"
+4. go to Downloads
+5. Click on Git-2.18.0-64-bit file to install git
+   a. Do you want to Run this file -> click on Run
+   b. yes
+   c. Next
+   d. Next
+   e. Next
+   f. please check Use Git and optional Unix tools
+   g. Next ....next ....
+6. go to DESKTOP and Right Click to find "Git Bash Here"
+   select "Git Bash Here"
+7. Then Git shell will be opened
+
+Initiating a Project:
+---------------------
+
+1. Create a folder/dir on Desktop
+   a. Git Bash Here on Desktop
+   b. mkdir TEMP
+   c. cd TEMP
+   d. Dir
+     >>> to list the files
+   e. ls
+     >>> to list the files
+2. Create Files
+   a. touch q1.txt q2.txt q3.txt
+   b. touch index.html calc.py
+
+Creating a GIT Repository and Assign User Name and Email:
+---------------------------------------------------------
+1. git init
+   >>> to Initialize git repository
+2. ls -a
+   >>> to list .git (hidden) folder has been created
+3. Need to give username and email
+   $ git config --global user.name "vaddi"
+   $ git config --global user.email "sudhakarvaddi11@gmail.com"
+The above commands have written username and email into configuration file
+
+   $ git config --list
+>> to display whether usrname and email were written in config file
+
+HOW TO COMMIT/SAVE FILES on GIT REPOSITORY:
+-------------------------------------------
+1. To know the status of the files
+   $ git status
+   All files will be in RED color saying UNTRACKED
+2. $ git add .
+   Staged all files 
+3. $ git commit -m "Initial commit of all files"
+   all files will be saved in git repo.
+4. git log
+   will show versions
+5. git log --stat
+   will show files within each version
+ 
+
+Note:
+git add pattern command:   $ git add s*.txt
+                           $ git add *.txt
+
+git add individual files:  $ git add sample.txt
+                           $ git add index.html
+
+git add all files:         $ git add .
