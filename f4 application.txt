@@ -72,3 +72,4 @@ git add individual files:  $ git add sample.txt
                            $ git add index.html
 
 git add all files:         $ git add .
+git commit: 
